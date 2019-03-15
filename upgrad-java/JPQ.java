@@ -1,19 +1,19 @@
 import java.util.*;
 
 /**
- * Following is the service class that is does the required job
+ * Following is the service class that does the required job
  */
 public class JPQ {
 	public static void main(String[] Args) {
-		// declares and initialises the PriorityQueue with SortStudent comparator
+		// declares and initialises the PriorityQueue with the SortStudent comparator
 		PriorityQueue<Student> studentlist = new PriorityQueue<Student>(new SortStudent());
 		Scanner scanner = new Scanner(System.in);
 		int events = Integer.parseInt(scanner.nextLine());
 
 		for (int i = 0; i < events; i++) {
 			String event = scanner.next();
-			// if "ENTER" initialize a new Student object with the given data and add to the
-			// Queue
+			// if event=="ENTER", initializes a new Student object with the given data and add to the
+			// PriorityQueue else removes from the PriorityQueue 
 			if (event.equals("ENTER")) {
 				String name = scanner.next();
 				float cgpa = scanner.nextFloat();
@@ -46,7 +46,8 @@ class Student {
 	}
 
 	/**
-	 * @Override returns the value of name attribute of the object
+	 * @Override 
+	 *  @return (String): value of the name attribute of the object
 	 */
 	public String toString() {
 		return this.name;
