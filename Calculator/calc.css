@@ -25,10 +25,13 @@
   font-size:200%;
   padding: 15px 15px 5px 0px;
   border-radius:10px 10px 0px 0px;
+  opacity: 0.76;
+  
 }
 
 .calculator_display >div
 {
+  
 }
 
 .calculator__keys >  button{
@@ -40,6 +43,7 @@
   font-weight:100;
   text-align:left;
   outline:0;
+  opacity: 0.76;
 }
 
 button.number{
@@ -55,6 +59,7 @@ button.operator{
   background-color:#03A9F4;
   text-align:center;
   border:0px;
+  opacity: 0.76;
 }
 
 button.additional{
@@ -73,4 +78,5 @@ button.additional{
 
 button.is-selected{
   background-color:#0288D1;
+  opacity: 0.76;
 }
