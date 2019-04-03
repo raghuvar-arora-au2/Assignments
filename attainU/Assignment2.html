@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Page Title</title>
+	<link rel="stylesheet" type="text/css"  href="style.css">
+	
+</head>
+<body>
+	<div class="row">
+		<div class="column"  >
+			<form class="leftform">
+				<div>
+					<label>Email:</label>	 
+					<input type="text">
+				</div>
+				
+				<div>
+					<label>Username:</label>	 
+					<input type="text">
+				</div>
+
+				<div>
+					<label>Password:</label>	 
+					<input type="password">
+				</div>
+				
+				<div>
+					<button  class="leftButton" onclick="leftclick()">submit</button>
+				</div>
+				
+			</form>
+		</div>
+		<div class="column">
+			<form>
+				<div>
+					<label>Fist name:</label>	 
+					<input type="text">
+				</div>
+
+				<div>
+					<label>Last name:</label>	 
+					<input type="text">
+				</div>
+				
+				<div>
+					<label>Date of Birth:</label>	 
+					<input type="date">
+				</div>
+
+				<div>
+					<label>mobile number:</label>	 
+					<input type="number">
+				</div>
+
+				<div>
+					<label>Gender</label>
+					<input type="radio" name="gender" value="male"> Male
+					<input type="radio" name="gender" value="female"> Female<br>
+				</div>
+
+				<div>
+					<label>Emplyment status</label>
+					<select>
+						<option value="self">Self Employed</option>
+						<option value="Employed">Employed</option>
+						<option value="NOne">None</option>
+						<option value="Other">Other</option>
+					</select>
+				</div>
+
+				<div>
+					<button  class="leftButton" onclick="rightclick()">submit</button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
